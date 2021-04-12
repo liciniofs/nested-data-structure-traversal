@@ -41,7 +41,6 @@ $section_counter = 1;
 $lesson_counter  = 1;
 
 foreach ( $items as $key => $item ) {
-
 	if ( $item->reset_lesson_position ) {
 		$lesson_counter = 1;
 	}
@@ -50,7 +49,6 @@ foreach ( $items as $key => $item ) {
 	$section_counter++;
 
 	foreach ( $item->lessons as $key => $lesson ) {
-
 		$lesson->position = $lesson_counter;
 		$lesson_counter++;
 	}
